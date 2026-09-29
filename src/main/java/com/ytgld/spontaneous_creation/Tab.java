@@ -22,6 +22,9 @@ public class Tab {
                 output.accept(InitBlockItem.StorageMelonSlice_Item.get());
                 output.accept(InitBlockItem.HungRhizome_Item.get());
                 output.accept(InitBlockItem.PeelHungRhizome_Item.get());
+                output.accept(InitBlockItem.HungRizomePlanks_Item.get());
+                output.accept(InitBlockItem.HungRizomePlanksStairs_Item.get());
+                output.accept(InitBlockItem.HungRizomeFence__Item.get());
             }).build());
 
 }

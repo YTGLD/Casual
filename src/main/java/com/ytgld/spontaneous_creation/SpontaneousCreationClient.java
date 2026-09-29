@@ -18,6 +18,7 @@ public class SpontaneousCreationClient {
     @SubscribeEvent
     public static void onGatherData(GatherDataEvent.Client event) {
         event.createProvider(TagsProvider::new);
+        event.createProvider(SCBlockTagsProvider::new);
     }
 
 }

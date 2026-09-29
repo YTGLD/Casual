@@ -2,7 +2,10 @@ package com.ytgld.spontaneous_creation.block;
 
 import com.ytgld.spontaneous_creation.SpontaneousCreation;
 import com.ytgld.spontaneous_creation.block.other.HungRhizome;
+import com.ytgld.spontaneous_creation.block.other.planks.HungRizomeFence;
+import com.ytgld.spontaneous_creation.block.other.planks.HungRizomePlanks;
 import com.ytgld.spontaneous_creation.block.other.PeelHungRhizome;
+import com.ytgld.spontaneous_creation.block.other.planks.HungRizomePlanksStairs;
 import com.ytgld.spontaneous_creation.block.storage.StorageMelonSlice;
 import com.ytgld.spontaneous_creation.block.unground.RhizomeMelon;
 import com.ytgld.spontaneous_creation.block.unground.RhizomeVine;
@@ -40,6 +43,25 @@ public class InitBlockItem {
                     .sound(SoundType.WOOD)
                     .randomTicks()
             ));
+    public static final DeferredBlock<Block> HungRizomePlanks_ = BLOCKS.registerBlock("hung_rhizome_planks", (properties)->
+            new HungRizomePlanks(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)
+                    .randomTicks()
+            ));
+    public static final DeferredBlock<Block> HungRizomePlanksStairs_ = BLOCKS.registerBlock("hung_rhizome_stairs", (properties)->
+            new HungRizomePlanksStairs(HungRizomePlanks_.get().defaultBlockState(),properties.strength(1.5f)
+                    .sound(SoundType.WOOD)
+                    .randomTicks()
+            ));
+    public static final DeferredBlock<Block> HungRizomeFence_ = BLOCKS.registerBlock("hung_rhizome_fence", (properties)->
+            new HungRizomeFence(properties.strength(1.5f)
+                    .sound(SoundType.WOOD)
+                    .randomTicks()
+            ));
+
+
+
+
     //------------------------------------------------------------------------------------------------------------------------------
     public static final DeferredRegister.Items BLOCK_ITEMS = DeferredRegister.createItems(SpontaneousCreation.MODID);
     public static final DeferredItem<BlockItem> RhizomeVine_Item = BLOCK_ITEMS.registerSimpleBlockItem(
@@ -52,6 +74,12 @@ public class InitBlockItem {
             "hung_rhizome", HungRhizome_);
     public static final DeferredItem<BlockItem> PeelHungRhizome_Item = BLOCK_ITEMS.registerSimpleBlockItem(
             "peel_hung_rhizome", PeelHungRhizome_);
+    public static final DeferredItem<BlockItem> HungRizomePlanks_Item = BLOCK_ITEMS.registerSimpleBlockItem(
+            "hung_rhizome_planks", HungRizomePlanks_);
+    public static final DeferredItem<BlockItem> HungRizomePlanksStairs_Item = BLOCK_ITEMS.registerSimpleBlockItem(
+            "hung_rhizome_stairs", HungRizomePlanksStairs_);
+    public static final DeferredItem<BlockItem> HungRizomeFence__Item = BLOCK_ITEMS.registerSimpleBlockItem(
+            "hung_rhizome_fence", HungRizomeFence_);
 
 
     //------------------------------------------------------------------------------------------------------------------------------
