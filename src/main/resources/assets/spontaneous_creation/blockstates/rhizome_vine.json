@@ -1,0 +1,127 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_branch_mushroom_flat"
+      },
+      "when": {
+        "mushroom_flat": true
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_center_grass"
+      },
+      "when": {
+        "grass": true
+      }
+    },
+    {
+      "when": {
+        "grass": false
+      },
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_center"
+      }
+    },
+
+    {
+      "when": {
+        "north": true,
+        "mushroom": true
+      },
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_branch_mushroom"
+      }
+    },
+
+    {
+      "when": {
+        "south": true,
+        "mushroom": true
+      },
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_branch_mushroom",
+        "y":180
+      }
+    },
+
+    {
+      "when": {
+        "east": true,
+        "mushroom": true
+      },
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_branch_mushroom",
+        "y":90
+      }
+    },
+
+    {
+      "when": {
+        "west": true,
+        "mushroom": true
+      },
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_branch_mushroom",
+        "y":270
+      }
+    },
+
+    {
+      "when": {
+        "north": true
+      },
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_branch"
+      }
+    },
+
+    {
+      "when": {
+        "south": true
+      },
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_branch",
+        "y":180
+      }
+    },
+
+    {
+      "when": {
+        "east": true
+      },
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_branch",
+        "y":90
+      }
+    },
+
+    {
+      "when": {
+        "west": true
+      },
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_vine_branch",
+        "y":270
+      }
+    },
+    {
+      "when":{
+        "up":true
+      },
+      "apply":{
+        "model":"spontaneous_creation:block/rhizome_vine_branch_up"
+      }
+    },
+
+    {
+      "when":{
+        "down":true
+      },
+      "apply":{
+        "model":"spontaneous_creation:block/rhizome_vine_branch_down"
+      }
+    }
+  ]
+}

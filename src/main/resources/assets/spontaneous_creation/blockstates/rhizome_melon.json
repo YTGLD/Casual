@@ -1,0 +1,52 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_melon_16"
+      },
+      "when": {
+        "age": 5
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_melon_12"
+      },
+      "when": {
+        "age": 4
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_melon_8"
+      },
+      "when": {
+        "age": 3
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_melon_4"
+      },
+      "when": {
+        "age": 2
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_melon_0"
+      },
+      "when": {
+        "age": 1
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/rhizome_melon_0"
+      },
+      "when": {
+        "age": 0
+      }
+    }
+  ]
+}
