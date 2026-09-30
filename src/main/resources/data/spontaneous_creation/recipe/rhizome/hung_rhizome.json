@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": "spontaneous_creation:rhizome_vine"
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "spontaneous_creation:hung_rhizome"
+  }
+}

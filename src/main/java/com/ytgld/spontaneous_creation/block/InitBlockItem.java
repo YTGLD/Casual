@@ -52,6 +52,7 @@ public class InitBlockItem {
             ));
     public static final DeferredBlock<Block> HungRizomeDoor_ = BLOCKS.registerBlock("hung_rhizome_door", (properties)->
             new HungRizomeDoor(properties.strength(1.5f)
+                    .noOcclusion()
                     .sound(SoundType.WOOD)
             ));
     public static final DeferredBlock<Block> HungRizomeSlab_ = BLOCKS.registerBlock("hung_rhizome_slab", (properties)->

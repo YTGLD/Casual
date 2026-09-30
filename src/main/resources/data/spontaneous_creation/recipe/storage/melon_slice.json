@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": "spontaneous_creation:storage_melon_slice"
+  },
+  "pattern": [
+    "   ",
+    " A ",
+    "   "
+  ],
+  "result": {
+    "count": 9,
+    "id": "spontaneous_creation:melon_slice"
+  }
+}
