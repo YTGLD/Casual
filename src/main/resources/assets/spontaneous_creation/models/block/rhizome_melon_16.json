@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "spontaneous_creation:block/melon_down",
+    "east": "spontaneous_creation:block/melon_side",
+    "north": "spontaneous_creation:block/melon_side",
+    "particle": "spontaneous_creation:block/melon_side",
+    "south": "spontaneous_creation:block/melon_side",
+    "up": "spontaneous_creation:block/melon_top",
+    "west": "spontaneous_creation:block/melon_side"
+  }
+}

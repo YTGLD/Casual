@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "spontaneous_creation:block/storage_melon_slice_down",
+    "east": "spontaneous_creation:block/storage_melon_slice_side",
+    "north": "spontaneous_creation:block/storage_melon_slice_side",
+    "particle": "spontaneous_creation:block/storage_melon_slice_side",
+    "south": "spontaneous_creation:block/storage_melon_slice_side",
+    "up": "spontaneous_creation:block/storage_melon_slice_top",
+    "west": "spontaneous_creation:block/storage_melon_slice_side"
+  }
+}

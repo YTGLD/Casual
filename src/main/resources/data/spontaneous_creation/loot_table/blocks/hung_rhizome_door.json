@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "spontaneous_creation:hung_rhizome_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
+          "name": "spontaneous_creation:hung_rhizome_door"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "spontaneous_creation:blocks/hung_rhizome_door"
+}

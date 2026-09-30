@@ -1,0 +1,121 @@
+package com.ytgld.spontaneous_creation.block.unground;
+
+import com.mojang.serialization.MapCodec;
+import com.ytgld.spontaneous_creation.block.InitBlockItem;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.PipeBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.storage.loot.LootParams;
+
+import java.util.List;
+
+public class RhizomeVine extends PipeBlock {
+
+
+    public static final BooleanProperty GRASS = BooleanProperty.create("grass");
+    public static final BooleanProperty MUSHROOM = BooleanProperty.create("mushroom");
+    public static final BooleanProperty MUSHROOM_FLAT = BooleanProperty.create("mushroom_flat");
+
+    public RhizomeVine(Properties properties) {
+        super(10, properties);
+
+        this.registerDefaultState(
+                this.stateDefinition
+                        .any()
+                        .setValue(NORTH, false)
+                        .setValue(EAST, false)
+                        .setValue(SOUTH, false)
+                        .setValue(WEST, false)
+                        .setValue(UP, false)
+                        .setValue(DOWN, false)
+                        .setValue(GRASS, false)
+                        .setValue(MUSHROOM, false)
+                        .setValue(MUSHROOM_FLAT, false)
+        );
+    }
+
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
+        return getStateWithConnections(blockPlaceContext.getLevel(), blockPlaceContext.getClickedPos(), this.defaultBlockState());
+    }
+
+    public static BlockState getStateWithConnections(BlockGetter blockGetter, BlockPos blockPos, BlockState blockState) {
+        BlockState blockState2 = blockGetter.getBlockState(blockPos.below());
+        BlockState blockState3 = blockGetter.getBlockState(blockPos.above());
+        BlockState blockState4 = blockGetter.getBlockState(blockPos.north());
+        BlockState blockState5 = blockGetter.getBlockState(blockPos.east());
+        BlockState blockState6 = blockGetter.getBlockState(blockPos.south());
+        BlockState blockState7 = blockGetter.getBlockState(blockPos.west());
+
+        int offset = blockPos.hashCode() +
+                blockState2.hashCode() +
+                blockState3.hashCode() +
+                blockState4.hashCode() +
+                blockState5.hashCode() +
+                blockState6.hashCode() +
+                blockState7.hashCode();
+        offset /= 14;
+        offset  = offset % 10;
+        if (offset < 0) {
+            offset = -offset;
+        }
+
+        boolean mushroom = offset ==1;
+        boolean grass = offset > 6;
+        boolean flat = offset == 0;
+        return blockState.trySetValue(DOWN, blockState2.isSolid() || blockState2.is(InitBlockItem.RhizomeVine_))
+                .trySetValue(UP, blockState3.isSolid() || blockState3.is(InitBlockItem.RhizomeVine_) )
+                .trySetValue(NORTH, blockState4.isSolid() || blockState4.is(InitBlockItem.RhizomeVine_) )
+                .trySetValue(EAST, blockState5.isSolid() || blockState5.is(InitBlockItem.RhizomeVine_) )
+                .trySetValue(SOUTH, blockState6.isSolid() || blockState6.is(InitBlockItem.RhizomeVine_) )
+                .trySetValue(WEST, blockState7.isSolid() || blockState7.is(InitBlockItem.RhizomeVine_) )
+                .trySetValue(MUSHROOM, mushroom)
+                .trySetValue(GRASS, grass)
+                .trySetValue(MUSHROOM_FLAT, flat)
+
+                ;
+    }
+    @Override
+    protected BlockState updateShape(
+            BlockState blockState,
+            LevelReader levelReader,
+            ScheduledTickAccess scheduledTickAccess,
+            BlockPos blockPos,
+            Direction direction,
+            BlockPos blockPos2,
+            BlockState blockState2,
+            RandomSource randomSource
+    ) {
+        if (!blockState.canSurvive(levelReader, blockPos)) {
+            scheduledTickAccess.scheduleTick(blockPos, this, 1);
+            return super.updateShape(blockState, levelReader, scheduledTickAccess, blockPos, direction, blockPos2, blockState2, randomSource);
+        } else {
+            boolean bl = blockState2.is(this)
+                    || blockState2.is(InitBlockItem.RhizomeMelon_.get())
+                    || direction == Direction.DOWN && blockState2.isSolidRender();
+            return blockState.setValue(PROPERTY_BY_DIRECTION.get(direction), bl);
+        }
+    }
+
+    @Override
+    protected List<ItemStack> getDrops(BlockState state, LootParams.Builder params) {
+        return List.of(this.asItem().getDefaultInstance());
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(NORTH, EAST, SOUTH, WEST, UP, DOWN,GRASS,MUSHROOM,MUSHROOM_FLAT);
+    }
+}
+
+
