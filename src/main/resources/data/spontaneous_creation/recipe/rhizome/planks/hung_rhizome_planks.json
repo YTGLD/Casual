@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": "#spontaneous_creation:rizome"
+  },
+  "pattern": [
+    "   ",
+    " A ",
+    "   "
+  ],
+  "result": {
+    "count": 2,
+    "id": "spontaneous_creation:hung_rhizome_planks"
+  }
+}

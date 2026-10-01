@@ -1,0 +1,42 @@
+{
+  "multipart": [
+
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/hung_rhizome_mushroom"
+      },
+      "when": {
+        "mushroom": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/hung_rhizome_hold"
+      },
+      "when": {
+        "hold": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/hung_rhizome"
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/hung_rhizome_hold"
+      },
+      "when": {
+        "hold": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/hung_rhizome_grass"
+      },
+      "when": {
+        "grass": "true"
+      }
+    }
+  ]
+}

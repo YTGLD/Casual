@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/storage_melon_slice"
+      }
+    }
+  ]
+}

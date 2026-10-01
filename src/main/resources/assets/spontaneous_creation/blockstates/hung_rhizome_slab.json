@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "spontaneous_creation:block/hung_rhizome_slab"
+    },
+    "type=double": {
+      "model": "spontaneous_creation:block/hung_rhizome_planks"
+    },
+    "type=top": {
+      "model": "spontaneous_creation:block/hung_rhizome_slab_top"
+    }
+  }
+}

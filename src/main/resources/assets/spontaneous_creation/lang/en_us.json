@@ -1,0 +1,32 @@
+{
+  "itemGroup.spontaneous_creation": "Spontaneous Creation",
+
+  "block.spontaneous_creation.rhizome": "Starchy Rhizome Block",
+  "block.spontaneous_creation.richin_flour_rhizomes": "Starchy Rhizome",
+  "block.spontaneous_creation.rhizome_vine": "Rhizome Vine",
+  "block.spontaneous_creation.rhizome_melon": "Rhizome Melon",
+  "block.spontaneous_creation.rhizome_melon_seed": "Rhizome Melon Seeds",
+  "block.spontaneous_creation.storage_melon_slice": "Melon Chunk",
+  "block.spontaneous_creation.hung_rhizome": "Giant Rhizome Block",
+  "block.spontaneous_creation.hung_rhizome_planks": "Giant Rhizome Planks",
+  "block.spontaneous_creation.peel_hung_rhizome": "Stripped Giant Rhizome Block",
+  "block.spontaneous_creation.hung_rhizome_stairs": "Giant Rhizome Stairs",
+  "block.spontaneous_creation.hung_rhizome_fence": "Giant Rhizome Fence",
+  "block.spontaneous_creation.hung_rhizome_door": "Giant Rhizome Door",
+  "block.spontaneous_creation.hung_rhizome_slab": "Giant Rhizome Slab",
+
+  "item.spontaneous_creation.rhizome": "Starchy Rhizome Block",
+  "item.spontaneous_creation.richin_flour_rhizomes": "Starchy Rhizome",
+  "item.spontaneous_creation.rhizome_vine": "Rhizome Vine",
+  "item.spontaneous_creation.rhizome_melon": "Rhizome Melon",
+  "item.spontaneous_creation.rhizome_melon_seed": "Rhizome Melon Seeds",
+  "item.spontaneous_creation.melon_slice": "Melon Slice",
+  "item.spontaneous_creation.storage_melon_slice": "Melon Chunk",
+  "item.spontaneous_creation.hung_rhizome": "Giant Rhizome Block",
+  "item.spontaneous_creation.hung_rhizome_planks": "Giant Rhizome Planks",
+  "item.spontaneous_creation.peel_hung_rhizome": "Stripped Giant Rhizome Block",
+  "item.spontaneous_creation.hung_rhizome_stairs": "Giant Rhizome Stairs",
+  "item.spontaneous_creation.hung_rhizome_fence": "Giant Rhizome Fence",
+  "item.spontaneous_creation.hung_rhizome_door": "Giant Rhizome Door",
+  "item.spontaneous_creation.hung_rhizome_slab": "Giant Rhizome Slab"
+}

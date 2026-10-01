@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "spontaneous_creation:block/peel_hung_rhizome"
+      }
+    }
+  ]
+}

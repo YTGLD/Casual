@@ -1,0 +1,36 @@
+{
+  "itemGroup.spontaneous_creation": "自然的随意创作",
+
+  "block.spontaneous_creation.rhizome": "富粉根茎块",
+  "block.spontaneous_creation.richin_flour_rhizomes": "富粉根茎",
+  "block.spontaneous_creation.rhizome_vine": "根茎藤",
+  "block.spontaneous_creation.rhizome_melon": "甜瓜",
+  "block.spontaneous_creation.rhizome_melon_seed": "甜瓜种子",
+  "block.spontaneous_creation.storage_melon_slice": "甜瓜块",
+  "block.spontaneous_creation.hung_rhizome": "巨型根茎块",
+  "block.spontaneous_creation.hung_rhizome_planks": "巨型根茎板",
+  "block.spontaneous_creation.peel_hung_rhizome": "去皮巨型根茎块",
+  "block.spontaneous_creation.hung_rhizome_stairs": "巨型根茎楼梯",
+  "block.spontaneous_creation.hung_rhizome_fence": "巨型根茎栅栏",
+  "block.spontaneous_creation.hung_rhizome_door": "巨型根茎门",
+  "block.spontaneous_creation.hung_rhizome_slab": "巨型根茎台阶",
+
+
+
+
+
+  "item.spontaneous_creation.rhizome": "富粉根茎块",
+  "item.spontaneous_creation.richin_flour_rhizomes": "富粉根茎",
+  "item.spontaneous_creation.rhizome_vine": "根茎藤",
+  "item.spontaneous_creation.rhizome_melon": "甜瓜",
+  "item.spontaneous_creation.rhizome_melon_seed": "甜瓜种子",
+  "item.spontaneous_creation.melon_slice": "甜瓜切片",
+  "item.spontaneous_creation.storage_melon_slice": "甜瓜块",
+  "item.spontaneous_creation.hung_rhizome": "巨型根茎块",
+  "item.spontaneous_creation.hung_rhizome_planks": "巨型根茎板",
+  "item.spontaneous_creation.peel_hung_rhizome": "去皮巨型根茎块",
+  "item.spontaneous_creation.hung_rhizome_stairs": "巨型根茎楼梯",
+  "item.spontaneous_creation.hung_rhizome_fence": "巨型根茎栅栏",
+  "item.spontaneous_creation.hung_rhizome_door": "巨型根茎门",
+  "item.spontaneous_creation.hung_rhizome_slab": "巨型根茎台阶"
+}

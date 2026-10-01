@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "textures": {
+    "bottom": "spontaneous_creation:block/hung_rhizome_door_bottom",
+    "top": "spontaneous_creation:block/hung_rhizome_door_top"
+  }
+}
